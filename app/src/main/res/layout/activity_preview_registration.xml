@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.elika.myapplication999.PreviewRegistrationActivity">
+
+    <TextView
+        android:id="@+id/preview_registration_user_name"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+
+        android:layout_marginTop="40dp"
+        android:text="User Name"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/preview_registration_password"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:text="Password"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/preview_registration_user_name" />
+
+    <TextView
+        android:id="@+id/preview_registration_first_name"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:text="First Name"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/preview_registration_password" />
+
+    <TextView
+        android:id="@+id/preview_registration_last_name"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:text="Last Name"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/preview_registration_first_name" />
+
+    <TextView
+        android:id="@+id/preview_registration_city"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:text="City"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/preview_registration_last_name" />
+
+    <TextView
+        android:id="@+id/preview_registration_address"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:text="Address"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/preview_registration_city" />
+
+    <TextView
+        android:id="@+id/preview_registration_email"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:text="Email"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/preview_registration_address"
+       />
+    <ImageView
+        android:id="@+id/preview_registration_image"
+        android:layout_width="127dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="40dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/preview_registration_email" />
+    <Button
+        android:id="@+id/preview_registration_register_button"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="on_register_click"
+        android:text="Register"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preview_registration_image" />
+    <CheckBox
+        android:id="@+id/registration_preview_checkBox_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is Loaner"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preview_registration_email" />
+</android.support.constraint.ConstraintLayout>
