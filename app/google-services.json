@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "605593169315",
+    "firebase_url": "https://libraryfinal-51e8c.firebaseio.com",
+    "project_id": "libraryfinal-51e8c",
+    "storage_bucket": "libraryfinal-51e8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605593169315:android:41173ce41ce42c46",
+        "android_client_info": {
+          "package_name": "com.example.elika.myapplication999"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605593169315-r0hjhiuat0cfn0c5ad9ljr2k5r4rebrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw6oaoKoczKdMhjctB6SW83wA6Fjuzs-E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

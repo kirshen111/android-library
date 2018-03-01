@@ -15,9 +15,8 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
-    DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
-    EditText passwordEditText = (EditText)this.findViewById(R.id.login_password);
-    EditText userNameEditText = (EditText)this.findViewById(R.id.login_user_name);
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +25,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void on_login_click(View view) {
+        EditText passwordEditText = (EditText)this.findViewById(R.id.login_password);
+        EditText userNameEditText = (EditText)this.findViewById(R.id.login_user_name);
+        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
 
         final String enteredPassword = passwordEditText.getText().toString();
         String userName = userNameEditText.getText().toString();

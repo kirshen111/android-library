@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         menuItemList.add("Add Book");
         menuItemList.add("Return Book");
         menuItemList.add("Loan Book");
+        menuItemList.add("Edit User");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 this,
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                userChioce = i;
+
                 Intent menuIntent = null;
                 if(i == 0)
                 {
@@ -84,6 +85,13 @@ public class MainActivity extends AppCompatActivity {
                             LoanBookActivity.class);
                     startActivity(menuIntent);
                 }
+                else if(i == 7)
+                {
+                    menuIntent = new Intent(MainActivity.this,
+                            EditUserActivity.class);
+                    startActivity(menuIntent);
+                }
+                userChioce = i;
             }
         });
 
